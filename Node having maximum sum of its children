@@ -1,0 +1,49 @@
+public class Solution {
+
+/*	TreeNode structure 
+ * 
+ * class TreeNode<T> {
+		T data;
+		ArrayList<TreeNode<T>> children;
+
+		TreeNode(T data){
+			this.data = data;
+			children = new ArrayList<TreeNode<T>>();
+		}
+	}*/
+	
+	
+	public static TreeNode<Integer> maxSumNode(TreeNode<Integer> root){
+		// Write your code here
+        int sum=0;
+        TreeNode<Integer> ans=root;
+        //sum=sum+root.children.data;
+        for(int i=0;i<root.children.size();i++){
+            TreeNode<Integer> x=maxSumNode(root.children.get(i));
+        }
+        }
+        return res;
+	}
+    // public static void maxSumNode(TreeNode<Integer> root,TreeNode<Integer> res,int max){
+    //     if(root==null){
+    //         return ;
+    //     }
+    //     int curr=root.data;
+    //     int count=root.children.size();
+    //     for(int i=0;i<count;i++){
+    //         curr=curr+root.children.get(i).data;
+    //         maxSumNode(root.children.get(i),res,max);
+    //         if((int)curr>max){
+    //         res=root;
+    //         max=curr;
+    //     }
+    //     }
+    //    /* if(curr>max){
+    //         res=root;
+    //         max=curr;
+    //     }*/
+    //     return;
+    }
+	
+		
+}
